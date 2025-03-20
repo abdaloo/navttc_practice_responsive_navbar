@@ -33,6 +33,13 @@ button{
   text-align: center;
 }
 
+button:hover{
+  border: 1px solid red;
+  background-color: blueviolet;
+  color: aliceblue;
+  box-sizing: border-box;
+}
+
 img{
   border-radius: 20px;
 }
