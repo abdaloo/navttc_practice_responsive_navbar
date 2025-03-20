@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  background-color: bisque;
+}
 nav{
   background-color: blueviolet;
   padding: 16px ;
@@ -23,7 +27,7 @@ button{
   border: none;
   padding: 10px;
   background-color: blue;
-  color: gold;
+  color: aliceblue;
   border-radius: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
@@ -34,9 +38,21 @@ img{
 }
 
 /* Responsive Design */
-@media(max-width: 786px) {
+@media(max-width: 786px){
   nav{
-    background-color: red;
+    background-color: orchid;
+  }
+  a{
+    color: darkcyan;
+  }
+  button{
+    background-color: teal ;
+  }
+}
+
+@media(max-width: 540px) {
+  nav{
+    background-color: orange;
     display: flex;
     flex-direction: column;
     gap: 25px
@@ -57,13 +73,25 @@ img{
     border-radius: 10px;
   }
     
+  a:hover{
+    color: red;
+  }
   img{
     width: 80px;
     border-radius: 0;
   }
 
+  img:hover{
+    border-radius: 50%;
+  }
+
   button{
     background-color: green;
   }
+
+  button:hover{
+    background-color: blue;
+  }
+
   
 }
